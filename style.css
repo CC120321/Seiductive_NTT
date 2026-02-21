@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik+Scribble&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   font-family: "Poppins", sans-serif;
+   scroll-padding-top: 2rem ;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+}
+
+
+section{
+    padding: 50px 10%;
+    
+}
+
+:root{
+    --main-color: #ece1d1;
+    --second-color: #d1c5b4;
+    --third-color: #000000;
+
+}
+
+img{
+    width: 70%;
+}
+
+*::selection{
+    background: var(--main-color);
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: 0.2s;
+    z-index: 999;
+
+
+}
+
+header.active .logo{
+    color: white;
+
+
+}
+
+header.active .navbar a{
+    color:white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700; /*to make it BOLD*/
+    color: black;
+}
+.logo img{
+    width: 30px;
+    margin-right: 10px;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar a:hover{ 
+    background: var(--second-color);
+    color: white;
+    border-radius: 4px;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer; /*make the element clickable*/
+    display: none;
+    z-index: 10001;
+
+    
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    background: url(img/backgroundsei.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+
+.home-img{
+    flex: 1 1 17rem;
+}
+
+.home-text span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: Poppins;
+    margin: 0.5em;
+}
+
+.home-text h1{
+    font-size: 5rem;
+    font-family: Bubblegum Sans;
+    color: #d1c5b4;
+    margin: 0.5rem;
+    
+}
+
+.home-text p{
+    font-size: 1rem;
+    color: var(--second-color);
+    font-weight: 500;
+    margin: 0.5rem 0 1.4rem;
+    padding-left: 5px;
+
+}
+.btn{
+    color: #d1c5b4;
+    border: 2px solid var(--third-color);
+    border-radius:  40px; 
+    padding: 10px 20px;
+    font-weight: 500;
+    
+
+}
+
+.btn:hover{
+    background-color: #f9d49c;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/*=============================ABOUT SECTION=================================*/
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    flex-direction: column  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #e5cca7;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.about h1{
+    font-size: 3.75rem;
+    color: rgb(85, 61, 24);
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: Bubblegum Sans;
+
+    
+
+}    
+
+.container{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+.image{
+    width: 700px;
+    height: 600px;
+}
+
+.about-text h2{
+    font-family: Fuzzy Bubbles;
+    margin: 10px;
+    color: #625440;
+}
+
+/*=================================SHOP SECTION=====================================*/
+.Shopp{
+     background: url(img/backgroundshop.jpg);
+     width: auto;
+     height: auto;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+.Shopp h1{
+    font-size: 3.75rem;
+    color: rgb(85, 61, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: Bubblegum Sans;
+    text-align: center;
+}
+
+.Shopp p{
+    font-size: 1.75rem;
+    color: rgb(85, 61, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: Bubblegum Sans;
+    text-align: center;
+}
+.shop-container h3{
+    text-align: center;
+    font-family: Fuzzy Bubbles;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin:0;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    
+
+}
+
+
+.shop-img{
+    width: 330px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.shop-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shop-box{
+    position: relative;
+    flex: 1 1 17rem;
+    height: auto;
+}
+
+
+.shop-container h3:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+header.active{
+    background : rgb(179, 132, 80);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15) ;
+}
+
+/*====================================CONTACT SECTION==================================*/
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-info{
+    flex: 1 1 20rem;
+
+
+}
+
+.contact h2{
+    font-size: 3.75rem;
+    color: rgb(85, 61, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: Bubblegum Sans;
+    text-align: center;
+}
+
+.contact-info h2{
+    font-size: 1.7rem;
+    color: #825528;
+}
+
+.contact-info span{
+    margin: 0.5rem 0 1rem;
+}
+
+
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+
+}
+
+.address i {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+}
+
+.address span{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
+.social a{
+    font-size: 24px;
+    color: #825528;
+    margin-top: 0;
+    
+}
+
+.social a:hover{
+    color:var(--second-color)
+}
+
+.contact-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contact-form{
+    flex: 1 1 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+form input, textarea{
+    width:100%;
+    padding:17px;
+    border-radius: 0.5rem;
+    outline: none;
+    border:2px solid var(--third-color);
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 4px 2px rgb(14 55 54/15%);
+}
+
+form input::placeholder, textarea::placeholder{
+    color: #825528;
+}
+
+form textarea{
+    resize: none;
+    height:150p;
+
+}
+
+form .btn{
+    width: 85px;
+    font-weight: bold;
+    background-color: #825528;
+    border: none;
+    color: white;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*==========================RESPONSIVE WEB====================================*/
+
+
+@media (min-width:1025px){
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:1025px){
+    header{
+        padding: 18px 4%;
+
+    }
+
+    section{
+        padding: 50px 4%;
+
+    }
+}
+
+@media (min-width: 601px) and (max-width:1024px){   /*ipad mode*/
+
+    
+
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header.active #menu-icon{      /*when scroll, change to white*/
+        color:white;
+        
+    }
+
+    header .navbar{
+        position:absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column ;
+        text-align: right;
+    }
+
+    .navbar.active{
+        top:100%
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: white;
+    
+    }
+
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+
+    .about h1{
+        font-size: 2rem;
+    }
+
+    .heading h2{
+        font-size: 1.6rem;
+    }
+
+    .contact-info h2{
+        font-size: 1.6rem;
+
+    }
+
+    .boxcard h3{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:600px){     /*mobile phone mode*/
+
+
+
+    #menu-icon{
+        display: initial;}
+
+    header.active #menu-icon{      /*when scroll, change to white*/
+        color:white;
+
+    }
+
+    header .navbar{
+        position:absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column ;
+        background-color: var(--third-color);
+        text-align: right;
+    }
+
+    .navbar.active{
+        top:100%
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: white;
+    
+    }
+
+
+    .home-text span{
+        font-size: 0.8rem;
+    }
+
+    .home-text h1{
+        font-size: 2rem;
+    }
+    
+    }
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+
